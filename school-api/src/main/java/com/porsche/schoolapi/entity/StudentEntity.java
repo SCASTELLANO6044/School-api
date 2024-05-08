@@ -29,7 +29,7 @@ public class StudentEntity extends GenericEntity {
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    @Column(name = "phone", nullable = false, unique = true)
+    @Column(name = "phone", unique = true)
     private String phone;
 
     @OneToMany(mappedBy = "studentEntity", fetch = FetchType.LAZY)
